@@ -8,15 +8,15 @@ const finalPurchase = (finalAmount) =>   totalAmount += finalAmount
 let chooseProduct;
 do  {  chooseProduct = prompt('\n 1 - BOOTS $20000\n 2 - CARDIGAN $15000\n 3 - SWEATER $30000');
   const chooseProductParsed = parseInt (chooseProduct)
-  if (chooseProductParsed) {
+  if (chooseProductParsed === 1) {
       totalAmount += bootsPrice
   }
   
-  else if (chooseProductParsed) {
+  else if (chooseProductParsed === 2) {
     totalAmount += cardiganPrice
   }
 
-  else if (chooseProductParsed) {
+  else if (chooseProductParsed ===3) {
     totalAmount += sweaterPrice
   }
 
