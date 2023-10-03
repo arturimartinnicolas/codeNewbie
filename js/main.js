@@ -24,7 +24,7 @@ do {
 
 } while (chooseProduct != 'END')
 
-alert('The total amount of your purchase is: $ ' + finalPurchase(totalAmount))
+alert('The total amount of your purchase (Tax included) is: $ ' + finalPurchase(totalAmount))
 console.log(totalAmount)
 
 
