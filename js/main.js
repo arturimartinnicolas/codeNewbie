@@ -1,28 +1,30 @@
 let totalAmount = 0;
-const bootsPrice = 20000;
-const cardiganPrice = 15000;
+const IVA = 1.21;
+const bootsPrice = 10000;
+const cardiganPrice = 20000;
 const sweaterPrice = 30000;
 
-const finalPurchase = (finalAmount) =>   totalAmount += finalAmount 
+const finalPurchase = (amount) => amount * IVA
 
 let chooseProduct;
-do  {  chooseProduct = prompt('\n 1 - BOOTS $20000\n 2 - CARDIGAN $15000\n 3 - SWEATER $30000');
-  const chooseProductParsed = parseInt (chooseProduct)
+do {
+  chooseProduct = prompt('\n 1 - BOOTS $10000\n 2 - CARDIGAN $20000\n 3 - SWEATER $30000');
+  const chooseProductParsed = parseInt(chooseProduct)
   if (chooseProductParsed === 1) {
-      totalAmount += bootsPrice
+    totalAmount += bootsPrice
   }
-  
+
   else if (chooseProductParsed === 2) {
     totalAmount += cardiganPrice
   }
 
-  else if (chooseProductParsed ===3) {
+  else if (chooseProductParsed === 3) {
     totalAmount += sweaterPrice
   }
 
-  } while (chooseProduct != 'END')
+} while (chooseProduct != 'END')
 
-  alert('The total amount of your purchase is: $ ' + finalPurchase(totalAmount) )
+alert('The total amount of your purchase is: $ ' + finalPurchase(totalAmount))
 console.log(totalAmount)
 
 
