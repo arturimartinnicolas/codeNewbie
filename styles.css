@@ -1,0 +1,58 @@
+body {
+    @font-face {
+        font-family: 'Roboto', sans-serif;
+        src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+    };
+}
+
+.home-nav-container {
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+        background-color: black;
+}
+
+.home-nav {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+    list-style: none; 
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.home-nav a {
+    color:rgb(105, 170, 31);
+    text-decoration:none;
+    font-size: large;
+}
+
+.home-nav a:hover {
+    color:rgb(44, 44, 44);
+}
+
+.header-logo {
+    display:flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.header-logo a {
+    display:flex;
+    align-items: center;
+    color:rgb(105, 170, 31);
+    text-decoration:none;
+}
+
+.header-logo img {
+    display: flex;
+    width: 50px;
+}
+
+.masvendidos {
+    width: 100%;
+    padding: 20px;
+}
+
